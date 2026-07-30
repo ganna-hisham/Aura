@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Notable&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+  <!-- Icons & Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid px-3 px-md-4">
+      <a class="navbar-brand logo fw-bold" href="#">Aura</a>
+
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-md-0 gap-md-2">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#message">Contact us</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#electronics">Electronics</a></li>
+              <li><a class="dropdown-item" href="#fashion">Fashion</a></li>
+              <li><a class="dropdown-item" href="#furniture">Furniture</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#About">Why shop with us</a></li>
+              <li><a class="dropdown-item" href="#offer">Offers</a></li>
+              <li><a class="dropdown-item" href="#reviews">Reviews</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="nav-icons d-flex align-items-center">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="container-fluid hero mb-5 px-3 px-md-4">
+    <div class="brandy"></div>
+
+    <div class="row w-100 m-0 align-items-center g-4">
+      <!-- Left copy -->
+      <div class="catch col-12 col-md-6 col-lg-5">
+        <h1 class="hero-h2">TIMELESS<br>BEAUTY<br>PERFECTED</h1>
+        <p class="hero-p">Elevating your skincare routine<br class="d-none d-md-inline">
+          with luxurious, porcelain-inspired<br class="d-none d-md-inline"> products.</p>
+        <button class="collections-btn">EXPLORE COLLECTIONS →</button>
+      </div>
+
+      <!-- Right gift card – HIDDEN on phones, visible from tablet up -->
+      <div class="col-12 col-md-6 col-lg-7 d-none d-md-flex justify-content-md-end justify-content-center">
+        <div class="right-hero">
+          <img src="aura_gift_set.png" class="sale-img mb-2" alt="Porcelain skin gift set">
+          <div class="d-flex justify-content-between w-100 align-items-center">
+            <h6 class="hero-h6 m-0">Porcelain skin gift set</h6>
+            <span class="sale-price fw-bold">$120.0</span>
+          </div>
+          <p class="gift-desc mt-2">A premium skin care collection in a beautifully designed box, featuring our top products for a luxurious skincare experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Products – Skin Care -->
+  <section id="products" class="container px-3 px-md-4 mb-5">
+    <div class="row g-4">
+
+      <!-- Intro text -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h2>RADIANT<br>SKIN STARTS<br>HERE</h2>
+        <p class="text-muted">Discover our luxurious skincare collection designed to cleanse, nourish and rejuvenate your face. From brightening cleansers to revitalizing eye creams, each product is crafted for flawless porcelain-like beauty.</p>
+      </div>
+
+      <!-- Product cards -->
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_2.png" class="product mb-2" alt="Exfoliating facial scrub">
+          <h6>Exfoliating facial scrub</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">A gentle scrub that removes dead skin cells, leaving your face feeling fresh and smooth.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_1.png" class="product mb-2" alt="Soothing facial mist">
+          <h6>Soothing facial mist</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">A refreshing mist that calms and hydrates the skin — perfect for midday refresh or setting makeup.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_4.png" class="product mb-2" alt="Purifying clay mask">
+          <h6>Purifying clay mask</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">A detoxifying mask that draws out impurities, giving your skin a cleaner, more radiant look.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_3.png" class="product mb-2" alt="Anti-aging face oil">
+          <h6>Anti-aging face oil</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">A nourishing oil that fights fine lines and boosts elasticity while providing deep hydration.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_8.png" class="product mb-2" alt="Illuminating eye cream">
+          <h6>Illuminating eye cream</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Targets puffiness and dark circles, leaving the under-eye area refreshed and rejuvenated.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_6.png" class="product mb-2" alt="Hydrating serum">
+          <h6>Hydrating serum</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Lightweight serum that brightens and evens skin tone, promoting a healthy glow.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_12.png" class="product mb-2" alt="Vitamin C glow drops">
+          <h6>Vitamin C glow drops</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Concentrated vitamin C formula that boosts radiance and fades dullness.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_5.png" class="product mb-2" alt="Night cream">
+          <h6>Night cream</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Rich overnight cream that repairs and deeply moisturizes while you sleep.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_7.png" class="product mb-2" alt="Gentle cleansing milk">
+          <h6>Gentle cleansing milk</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Creamy cleanser that removes impurities without stripping the skin’s natural barrier.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_9.png" class="product mb-2" alt="Brightening toner">
+          <h6>Brightening toner</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Alcohol-free toner that refines pores and prepares skin for the next steps.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_2.png" class="product mb-2" alt="Exfoliating facial scrub">
+          <h6>Exfoliating facial scrub</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">A gentle scrub that removes dead skin cells, leaving your face feeling fresh and smooth.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Body Care Banner -->
+  <div class="container px-3 px-md-4 mb-4">
+    <div class="body-section"></div>
+  </div>
+
+  <!-- Body Care Products -->
+  <section class="container px-3 px-md-4 mb-5">
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <h2>Body care</h2>
+          <p>Indulge in the ultimate self-care routine with Aura’s Body Care collection. From soothing scrubs to rich body butters, each product restores your skin’s natural glow and locks in moisture all day.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_body_1.png" class="product mb-2" alt="Nourishing body wash">
+          <h6>Nourishing body wash</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Deeply hydrating wash that gently cleanses while restoring natural moisture.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_body_2.png" class="product mb-2" alt="Soothing body scrub">
+          <h6>Soothing body scrub</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Ultra-gentle exfoliator that reveals smooth, glowing skin with calming botanicals.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_11.png" class="product mb-2" alt="Body butter">
+          <h6>Rich body butter</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Velvety cream that melts into skin for intense 24-hour hydration and elasticity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hand Care Banner -->
+  <div class="container px-3 px-md-4 mb-4">
+    <div class="hand-section"></div>
+  </div>
+
+  <!-- Hand Care Products -->
+  <section class="container px-3 px-md-4 mb-5">
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <h2>Hand care</h2>
+          <p>Show your hands the love they deserve with Aura’s Hand Care essentials. Lightweight, fast-absorbing formulas lock in moisture without greasiness.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_hand_1.png" class="product mb-2" alt="Intensive repair hand cream">
+          <h6>Intensive repair hand cream</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Ultra-nourishing treatment that heals cracked hands and restores the skin barrier.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_hand_2.png" class="product mb-2" alt="Velvet soft hand wash">
+          <h6>Velvet soft hand wash</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Luxurious liquid soap that cleanses without stripping natural moisture.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="aura_product_10.png" class="product mb-2" alt="Soothing hand cream">
+          <h6>Soothing hand cream</h6>
+          <div class="price">$45.0</div>
+          <p class="text-muted desc">Lightweight cream that instantly relieves dry, tired hands with calming botanicals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container-fluid myfooter mt-5">
+    <hr class="border-light opacity-25">
+    <div class="container px-3 px-md-4">
+      <div class="row g-4 py-4">
+        <div class="col-12 col-md-3 text-center text-md-start">
+          <h2 class="logo fw-bold mb-3">Aura</h2>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <small class="d-block mb-1">Home</small>
+          <small class="d-block mb-1">Shop</small>
+          <small class="d-block mb-1">Contact us</small>
+          <small class="d-block mb-1">Categories</small>
+          <small class="d-block">Features</small>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <small class="d-block mb-1">Skin</small>
+          <small class="d-block mb-1">Body care</small>
+          <small class="d-block">Hand care</small>
+        </div>
+
+        <div class="col-12 col-md-3 text-center text-md-start">
+          <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center pb-3 small opacity-75">
+        &copy; All rights reserved for CubMart 2026
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
